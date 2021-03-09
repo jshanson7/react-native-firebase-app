@@ -8,7 +8,7 @@
   "scripts": {
     "build": "npx genversion --semi lib/version.js && npm run build:version",
     "build:version": "node ./scripts/genversion-ios && node ./scripts/genversion-android",
-    "build:clean": "rimraf android/build && rimraf ios/build",
+    "build:clean": "npx rimraf android/build && npx rimraf ios/build",
     "prepare": "npm run build"
   },
   "repository": {
